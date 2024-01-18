@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik Kalkulator Matik</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="tema">
+            <h1>Katik Kalkulator Matematik</h1>
+        </div>
+        <div class="container">
+            <div class="hero">
+                <div class="hero-desc">
+                    <h2>Hi Sobat Revou</h2>
+                    <p>
+                        Selamat datang di Katik 'Kalkulator Matematik' adalah sebuah program Kalkulator menghitung Luas Persegi dan Persegi Panjang serta Keliling Persegi dan Persegi Panjang
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo eaque, error obcaecati asperiores velit exercitationem eveniet provident? Deserunt quia fugit eum commodi consequuntur vel illo unde harum? Ex, nihil?
+                    </p>
+                </div>
+                <img src="./image/hero.png" alt="hero">
+            </div>
+            <nav>
+                <h2>Hitung ?</h2>
+                <div class="hitung">
+                    <button id="persegiButton">Persegi</button>
+                    <button id="persegipanjangButton">Persegi Panjang</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" >
+            <div id="persegi" class="flex" >
+                <div class="penjelasan">
+                    <div class="rumus">
+                        <div>                        
+                            <h5>Rumus Luas Persegi</h5>
+                            <p>L = Luas <br> S = Sisi <br> L = S * S</p>
+                        </div>
+                        <div>
+                            <h5>Rumus Keliling Persegi</h5>
+                            <p>K = Keliling <br> S = Sisi <br> K = 4 * S</p>
+                        </div>                    
+                    </div>
+                    <div class="kotak">
+                        <span class="s-x">s</span>
+                        <span class="s-y">s</span>
+                        <span class="a">A</span>
+                        <span class="b">B</span>
+                        <span class="c">C</span>
+                        <span class="d">D</span>
+                    </div>
+                    <ul>
+                        <li class="hijau bulat"></li>
+                        <li class="oren bulat"></li>
+                        <li class="merah bulat"></li>
+                    </ul>
+                </div>
+                <form id="penghitunganpersegi" action="">
+                    <label for="sisi-persegi">Hitung Luas Persegi</label>
+                    <input type="number" name="sisi-persegi" id="nilai-sisi" placeholder="Nilai Sisi">
+                    <input type="submit" value="Hitung" id="button-nilai">
+                    <input type="reset" value="Reset" id="button-reset">
+                </form>
+
+                <div class="tampilHasilPersegi">
+                    <h4>HASIL :</h4>
+                    <p>Luas Persegi <span id="hasilLuasPersegi"></span></p>
+                    <p>Keliling Persegi <span id="hasilKelilingPersegi"></span></p>
+        
+                </div>
+            </div>
+            <div id="persegipanjang" class="none" >
+                <div class="penjelasan">
+                    <div class="rumus">
+                        <div>                        
+                            <h5>Rumus Luas Persegi panjang</h5>
+                            <p> Luas <br> L = Lebar <br> P = Panjang <br> Luas = P * L</p>
+                        </div>
+                        <div>
+                            <h5>Rumus Keliling Persegi panjang</h5>
+                            <p>K = Keliling <br> P = Panjang <br> L = Lebar <br> K = 2(P + L) </p>
+                        </div>                    
+                    </div>
+                    <div class="kotakpanjang color">
+                        <span class="s-x">s</span>
+                        <span class="s-y">s</span>
+                        <span class="a">A</span>
+                        <span class="b">B</span>
+                        <span class="c">C</span>
+                        <span class="d">D</span>
+                    </div>
+                    <ul>
+                        <li class="hijau bulat"></li>
+                        <li class="oren bulat"></li>
+                        <li class="merah bulat"></li>
+                    </ul>
+                </div>
+                <form id="penghitunganppanjang" action="">
+                    <label for="sisi-persegi">Hitung Luas Persegi panjang</label>
+                    <input type="number" name="sisi-persegi" id="nilai-panjang" placeholder="Nilai lebar">
+                    <input type="number" name="sisi-persegi" id="nilai-lebar" placeholder="Nilai lebar">
+                    <input type="submit" value="Hitung" id="button-nilai">
+                    <input type="reset" value="Reset" id="button-reset">
+                </form>
+
+                <div class="tampilHasilPersegiPanjang">
+                    <h4>HASIL :</h4>
+                    <p>Luas Persegi Panjang <span id="hasilLuasPersegiPanjang"></span></p>
+                    <p>Keliling Persegi Panjang <span id="hasilKelilingPersegiPanjang"></span></p>
+        
+                </div>
+            </div>
+           
+        </div>
+       
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
