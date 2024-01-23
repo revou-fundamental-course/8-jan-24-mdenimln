@@ -75,3 +75,32 @@ document.getElementById('penghitunganppanjang').addEventListener('submit', funct
 
     hitungppanjang();
 });
+
+const tombolhijau = document.querySelectorAll('.hijau');
+const tomboloren = document.querySelectorAll('.oren');
+const tombolmerah = document.querySelectorAll('.merah');
+const tombolHunt = document.querySelectorAll('.bgColor');
+const kotak = document.querySelector('.kotak');
+const kotakpanjang = document.querySelector('.kotakpanjang');
+console.log(tombolhijau)
+function ubahWarna(tombolSaklar, colory) {
+    tombolSaklar.forEach(function(tombol) {
+        console.log(tombol);
+        tombol.addEventListener('click', function() {
+            kotak.style.backgroundColor = colory;
+            kotakpanjang.style.backgroundColor = colory;
+            tombolHunt.forEach((tHunt) => {
+                tHunt.style.backgroundColor = colory;
+            })
+            document.querySelectorAll('.color').forEach((c) =>{
+                console.log(c)
+                c.style.color = colory
+            })
+        })
+    })
+}
+ubahWarna(tombolhijau, '#005B41')
+ubahWarna(tomboloren, '#FAEF5D')
+ubahWarna(tombolmerah, '#FF0000')
+
+
